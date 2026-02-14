@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form </title>
+
+    <a href="register.html"></a>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #f0f0f0;
+        }
+        
+        .wrapper {
+            width: 350px;
+            padding: 30px;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        
+        .wrapper h1 {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        
+        .input-box {
+            position: relative;
+            margin-bottom: 20px;
+        }
+        
+        .input-box input {
+            width: 100%;
+            padding: 12px 40px 12px 12px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        
+        .input-box i {
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            transform: translateY(-50%);
+            color: #999;
+        }
+        
+        .remember-forgot {
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+        
+        .btn {
+            width: 100%;
+            padding: 12px;
+            background: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        
+        .btn:hover {
+            background: #45a049;
+        }
+        
+        .register-link {
+            text-align: center;
+            margin-top: 15px;
+            font-size: 14px;
+        }
+        
+        .register-link a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        
+        .register-link a:hover {
+            text-decoration: underline;
+        }
+        
+        .body {
+            background-image: url('Frame 5 (1).jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+    </style>
+
+    <!-- OPTIONAL: Boxicons CDN if you're using <i class='bx ...'> icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body style="background-image: url('Frame 5 (1).jpg');background-position: center;background-repeat: no-repeat;background-attachment: fixed;">
+
+    <div class="wrapper">
+        <<form action="/login" method="post">
+>
+            <h1>Login</h1>
+            <div class="input-box">
+                <input type="text" name="username"  placeholder="Username" required>
+                <i class='bx bxs-user'></i>
+            </div>
+            <div class="input-box">
+                <input type="password" name="password"  placeholder="Password" required>
+                <i class='bx bxs-lock-alt'></i>
+            </div>
+            <div class="remember-forgot">
+                <label><input type="checkbox">Remember Me</label>
+                <a href="#">Forgot Password</a>
+            </div>
+            <button type="submit" class="btn">Login</button>
+            <div class="register-link">
+                <p>Dont have an account? <a href="register.html">Register Now </a>
+                </p>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>
